@@ -1,0 +1,402 @@
+.container,
+.deli,
+.apparts {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Logo section */
+
+.logoc {
+    position: relative;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logli {
+    left: 1rem;
+}
+.logo {
+    width: 15vmin;
+}
+
+/* hamburger Menu */
+
+
+#absolute {
+    padding:12px 6px;
+    right: 1rem;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.bars, .bars:before, .bars:after {
+    width: 32px;
+    height: 3px;
+    content: '';
+    background-color: #8aea46;
+    display: block;
+    transition: all 350ms ease-in-out;
+}
+.bars {
+    position: relative;
+}
+.bars:before {
+    position: absolute;
+    top: 8px;
+}
+.bars:after {
+    position: absolute;
+    top: -8px;
+}
+
+/* menu items */
+
+.menuItem {
+    display: none;
+}
+
+/* Responive Design */
+
+.navOpen .menuItem {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 0;
+    min-height: 80vh;
+    justify-content: center;
+    align-items:left;
+    animation-name: Rounding;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes Rounding {
+    from {
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        border-radius: 50%;
+        z-index: 0;
+        transform: translateZ(0);
+    }
+    to {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        z-index: 1;
+        transform: translateZ(1);
+    }
+}
+.navOpen #absolute {
+    position: relative;
+}
+.navOpen #absolute .bars {
+    background-color: transparent;
+}
+.navOpen #absolute .bars:after {
+    background-color: #fc6560;
+    top: 0;
+    transform: rotate(-45deg);
+}
+.navOpen #absolute .bars:before {
+    background-color: #fc6560;
+    top: 0;
+    transform: rotate(45deg);
+}
+.navLists {
+    padding: 1rem;
+    position: relative;
+    list-style: none;
+}
+
+/* active and inactive links */
+
+
+.active {
+    color: #8aea46;
+    text-decoration: none;
+    font-size: 110%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.inactive {
+    color: #fc6560;
+    text-decoration: none;
+    font-size: 110%;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 1.2s ease-in-out;
+}
+.inactive:hover {
+    color: #8aea46;
+}
+.fb {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+
+/* Jumbotron section */
+
+
+.jwrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+.head_container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+.conwrapper {
+    width: 95%;
+    padding: 1rem 0;
+    position: relative;
+}
+.heading {
+    color: white;
+    font-weight: 700;
+    font-size: 150%;
+    position: relative;
+}
+.smhead {
+    font-size: 125%;
+    color: #8aea46;
+    font-weight: 500;
+    position: relative;
+}
+.img-con {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    position: relative;
+}
+.imges {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.images {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.chevron {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.chevron-d {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+.chevron-down {
+    color: white;
+    font-size: 125%;
+    font-weight: 900;
+}
+.wrapper {
+    width: 95%;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.wrapper .smhead {
+    color: black;
+    font-size: 125%;
+    font-weight: 500;
+    position: relative;
+}
+.jack {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+/* appart section */
+
+
+.apparts .container {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    padding: 1rem 0;
+}
+.subhead {
+    font-size: 150%;
+    font-weight: 700;
+    color: #fc6560;
+    margin: 0 auto;
+    text-align: center;
+}
+.grid_container {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    padding: 1rem 0;
+}
+.grids {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.grids .smhead {
+    color: #8aea46;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+.divi {
+    width: 50%;
+    background-image: radial-gradient(#8aea46, #fc6560, #000);
+    margin: 10px auto;
+    height: 5px;
+}
+.apima {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+}
+.grids .text {
+    font-size: 110%;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+
+/* call to action links */
+
+
+.callToAction {
+  width: 90%; 
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.ctaBtn {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 110%;
+    transition: color 350ms ease-in-out;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+.ctaBtn:hover {
+    color: #8aea46;
+}
+.ctaBtn-wha {
+    background-color: #8aea46;
+    color: #fc6560;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 110%;
+    transition: color 350ms ease-in-out;
+}
+
+/* footer section */
+
+footer {
+    width: 100%;
+    background-color: #000;
+    padding: 1rem 0;
+    position: relative;
+}
+
+/* whatsapp link */
+
+#fixed {
+    position: fixed;
+    bottom: 50%;
+    transform: translateY(-50%);
+    right: 2.5rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #8aea46;
+    border: none;
+    z-index: 99;
+}
+.whatsapp {
+    color: #fff;
+    font-size: 150%;
+    font-weight: 900;
+}
+
+/* Copyright text */
+
+.copyright {
+    width: 100%;
+    padding:0 0 10px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.cpy {
+    color: #fff;
+    font-weight: 700;
+    font-size: 125%;
+    position: relative;
+    text-align: center;
+}
+.cpy a,
+.design a {
+    color: #fc6560;
+    text-decoration: none;
+}
+/* designed by text */
+
+.designed {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+.design {
+    color: #8aea46;
+    font-weight: 500;
+    font-size: 100%;
+}
+/* 240px devices */
+
+
+@media screen and (max-width: 240px) {
+    .logo {
+        width: 25vmin;
+    }
+}
+ 
